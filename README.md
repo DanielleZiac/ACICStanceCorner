@@ -10,5 +10,7 @@
   - Aeron Evangelista
   - Lance Andrei Espina
   - Mark Trevor Marcos
-- Course: CS 221 (Advanced Object-oriented Programming)
-- Course Facilitator: Fatima Marie Agdon
+- Course:
+  - CS 221 (Advanced Object-oriented Programming)
+- Course Facilitator:
+  - Fatima Marie Agdon
