@@ -212,12 +212,32 @@
   <ItemGroup>
     <None Include="Resources\PanelMenu.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\dog-house.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ACName1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homelogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\services_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transact_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acc_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,31 +38,31 @@ namespace AdminPage
            Application.Exit();
         }
 
-        private void HomeBtn_Click(object sender, EventArgs e)
+        private void Home_Btn_Click(object sender, EventArgs e)
         {
             UC_Home uc = new UC_Home();
             addUserControl(uc);
         }
 
-        private void TransactBtn_Click_1(object sender, EventArgs e)
+        private void Transact_Btn_Click(object sender, EventArgs e)
         {
             UC_Transaction uc = new UC_Transaction();
             addUserControl(uc);
         }
 
-        private void ServicesBtn_Click_1(object sender, EventArgs e)
+        private void Services_Btn_Click(object sender, EventArgs e)
         {
             UC_Services uc = new UC_Services();
             addUserControl(uc);
         }
 
-        private void AccBtn_Click(object sender, EventArgs e)
+        private void Acc_Btn_Click(object sender, EventArgs e)
         {
             UC_Account uc = new UC_Account();
             addUserControl(uc);
         }
 
-        private void AboutBtn_Click(object sender, EventArgs e)
+        private void About_Btn_Click(object sender, EventArgs e)
         {
             UC_About uc = new UC_About();
             addUserControl(uc);

@@ -63,6 +63,26 @@ namespace AdminPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap about_logo {
+            get {
+                object obj = ResourceManager.GetObject("about_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap acc_logo {
+            get {
+                object obj = ResourceManager.GetObject("acc_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ACICStance {
             get {
                 object obj = ResourceManager.GetObject("ACICStance", resourceCulture);
@@ -106,6 +126,36 @@ namespace AdminPage.Properties {
         internal static System.Drawing.Bitmap ACName1 {
             get {
                 object obj = ResourceManager.GetObject("ACName1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dog_house {
+            get {
+                object obj = ResourceManager.GetObject("dog-house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_logo {
+            get {
+                object obj = ResourceManager.GetObject("home_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap homelogo {
+            get {
+                object obj = ResourceManager.GetObject("homelogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +246,26 @@ namespace AdminPage.Properties {
         internal static System.Drawing.Bitmap Register1 {
             get {
                 object obj = ResourceManager.GetObject("Register1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap services_logo {
+            get {
+                object obj = ResourceManager.GetObject("services_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transact_logo {
+            get {
+                object obj = ResourceManager.GetObject("transact_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
