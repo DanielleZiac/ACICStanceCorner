@@ -6,7 +6,7 @@
 ## Credits
 
 - Developer Team:
-- - Danielle Ziac Abril
+  - Danielle Ziac Abril
   - Aeron Evangelista
   - Lance Andrei Espina
   - Mark Trevor Marcos
