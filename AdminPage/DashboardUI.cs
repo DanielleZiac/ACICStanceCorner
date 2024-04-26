@@ -14,16 +14,21 @@ namespace AdminPage
 {
     public partial class DashboardUI : Form
     {
-        public DashboardUI()
+        private string adminName;
+        private string srCode;
+        public DashboardUI(string adminName, string srCode)
         {
             InitializeComponent();
             UC_Home uc = new UC_Home();
             addUserControl(uc);
+            this.adminName = adminName;
+            this.srCode = srCode;
         }
 
         private void DashboardUI_Load(object sender, EventArgs e)
         {
-
+            AdminLabel.Text = adminName; // Update the admin label with the admin name
+            SRLabel.Text = srCode; // Update the SR label with the SR code
         }
         private void addUserControl(UserControl userControl)
         {

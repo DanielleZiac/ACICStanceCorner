@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ShowPassReg = new System.Windows.Forms.CheckBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Reg_Btn = new System.Windows.Forms.Button();
             this.BackLog = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,19 +56,19 @@
             this.ShowPassReg.UseVisualStyleBackColor = true;
             this.ShowPassReg.CheckedChanged += new System.EventHandler(this.ShowPassReg_CheckedChanged);
             // 
-            // button2
+            // Reg_Btn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(107)))), ((int)(((byte)(175)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(861, 520);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 43);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Reg_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(107)))), ((int)(((byte)(175)))));
+            this.Reg_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Reg_Btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reg_Btn.ForeColor = System.Drawing.Color.White;
+            this.Reg_Btn.Location = new System.Drawing.Point(861, 520);
+            this.Reg_Btn.Name = "Reg_Btn";
+            this.Reg_Btn.Size = new System.Drawing.Size(225, 43);
+            this.Reg_Btn.TabIndex = 10;
+            this.Reg_Btn.Text = "Register";
+            this.Reg_Btn.UseVisualStyleBackColor = false;
+            this.Reg_Btn.Click += new System.EventHandler(this.Reg_Btn_Click);
             // 
             // BackLog
             // 
@@ -180,7 +180,7 @@
             this.Controls.Add(this.SRRegBox);
             this.Controls.Add(this.NameRegBox);
             this.Controls.Add(this.ShowPassReg);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Reg_Btn);
             this.Controls.Add(this.BackLog);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -199,7 +199,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox ShowPassReg;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Reg_Btn;
         private System.Windows.Forms.Button BackLog;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox NameRegBox;
