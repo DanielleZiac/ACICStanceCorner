@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCrypt;
 
 namespace AdminPage
 {
@@ -56,6 +57,13 @@ namespace AdminPage
             string adminName = NameRegBox.Text.Replace("'", "''"); // Sanitize input by escaping single quotes
             string adminSRCode = SRRegBox.Text;
             string adminPassword = PassRegBox.Text;
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(adminPassword);
+
+            if (adminSRCode.Length != 8)
+            {
+                MessageBox.Show("SR code must be 8 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Exit the method if validation fails
+            }
 
             // Perform validation if necessary
             if (String.IsNullOrEmpty(adminName) || String.IsNullOrEmpty(adminSRCode) || String.IsNullOrEmpty(adminPassword))
@@ -67,7 +75,7 @@ namespace AdminPage
                 try
                 {
                     string ConString = "datasource=localhost;database=ACICStance_Corner;username=root;password=navi#7oaaK6";
-                    string Query = $"INSERT INTO Admin (Admin_Name, Admin_SRCode, Admin_Password) VALUES ('{adminName}', '{adminSRCode}', '{adminPassword}')";
+                    string Query = $"INSERT INTO Admin (Admin_Name, Admin_SRCode, Admin_Password) VALUES ('{adminName}', '{adminSRCode}', '{hashedPassword}')";
                     MySqlConnection conn = new MySqlConnection(ConString);
                     MySqlCommand cmd = new MySqlCommand(Query, conn);
 
@@ -78,6 +86,9 @@ namespace AdminPage
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Registered Successfully");
+                        LogInFrm loginPage = new LogInFrm();
+                        this.Hide();
+                        loginPage.Show();
                     }
                     else
                     {

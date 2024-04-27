@@ -120,6 +120,7 @@
             this.SRRegBox.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SRRegBox.ForeColor = System.Drawing.SystemColors.MenuText;
             this.SRRegBox.Location = new System.Drawing.Point(682, 308);
+            this.SRRegBox.MaxLength = 8;
             this.SRRegBox.Name = "SRRegBox";
             this.SRRegBox.Size = new System.Drawing.Size(389, 30);
             this.SRRegBox.TabIndex = 13;

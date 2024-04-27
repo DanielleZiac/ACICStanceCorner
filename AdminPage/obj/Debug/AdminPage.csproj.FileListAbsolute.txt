@@ -48,3 +48,5 @@ C:\Users\Lance\source\repos\AdminPage\AdminPage\bin\Debug\System.Memory.xml
 C:\Users\Lance\source\repos\AdminPage\AdminPage\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Lance\source\repos\AdminPage\AdminPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Lance\source\repos\AdminPage\AdminPage\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Lance\source\repos\AdminPage\AdminPage\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Lance\source\repos\AdminPage\AdminPage\bin\Debug\BCrypt.Net-Next.xml

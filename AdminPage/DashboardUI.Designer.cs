@@ -39,14 +39,14 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.SRLabel = new System.Windows.Forms.Label();
             this.AdminLabel = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.adminLogout = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exitBtn = new System.Windows.Forms.Label();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.panelButton.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,7 +165,7 @@
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
             this.panelHeader.Controls.Add(this.SRLabel);
             this.panelHeader.Controls.Add(this.AdminLabel);
-            this.panelHeader.Controls.Add(this.pictureBox3);
+            this.panelHeader.Controls.Add(this.adminLogout);
             this.panelHeader.Controls.Add(this.pictureBox1);
             this.panelHeader.Controls.Add(this.exitBtn);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -194,15 +194,16 @@
             this.AdminLabel.TabIndex = 4;
             this.AdminLabel.Text = "Admin Name";
             // 
-            // pictureBox3
+            // adminLogout
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(796, 31);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.adminLogout.Image = ((System.Drawing.Image)(resources.GetObject("adminLogout.Image")));
+            this.adminLogout.Location = new System.Drawing.Point(796, 31);
+            this.adminLogout.Name = "adminLogout";
+            this.adminLogout.Size = new System.Drawing.Size(50, 50);
+            this.adminLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.adminLogout.TabIndex = 3;
+            this.adminLogout.TabStop = false;
+            this.adminLogout.Click += new System.EventHandler(this.adminLogout_Click);
             // 
             // pictureBox1
             // 
@@ -252,7 +253,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -265,7 +266,7 @@
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label exitBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox adminLogout;
         private System.Windows.Forms.Label SRLabel;
         private System.Windows.Forms.Label AdminLabel;
         private System.Windows.Forms.Button Home_Btn;

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCrypt;
 
 namespace AdminPage
 {
@@ -60,48 +61,63 @@ namespace AdminPage
             string enteredSRCode = SRLogBox.Text;
             string enteredPassword = PassLogBox.Text;
 
+            if (enteredSRCode.Length != 8)
+            {
+                MessageBox.Show("SR code must be 8 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Exit the method if validation fails
+            }
             try
             {
-                // Establish connection to the database
                 string connectionString = "datasource=localhost;database=Acicstance_corner;username=root;password=navi#7oaaK6";
-                MySqlConnection conn = new MySqlConnection(connectionString);
-                conn.Open();
-
-                // Query to check if the entered SR code and password exist in the database
-                string query = "SELECT Admin_Name, Admin_SRCode FROM Admin WHERE Admin_SRCode = @SRCode AND Admin_Password = @Password";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@SRCode", enteredSRCode);
-                cmd.Parameters.AddWithValue("@Password", enteredPassword);
-
-                // Execute the query and retrieve the results
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    // If the reader has rows, the SR code and password match a record in the database
-                    // Get the admin name and SR code from the database
-                    string adminName = reader.GetString("Admin_Name");
-                    string srCode = reader.GetString("Admin_SRCode");
+                    conn.Open();
 
+                    string query = "SELECT Admin_Name, Admin_SRCode, Admin_Password FROM Admin WHERE Admin_SRCode = @SRCode";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@SRCode", enteredSRCode);
 
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string hashedPasswordFromDatabase = reader.GetString("Admin_Password");
 
-                    // Show the dashboard
-                    DashboardUI dashboard = new DashboardUI(adminName, srCode);
-                    this.Hide();
-                    dashboard.Show();
+                                if (BCrypt.Net.BCrypt.Verify(enteredPassword, hashedPasswordFromDatabase))
+                                {
+                                    string adminName = reader.GetString("Admin_Name");
+                                    string srCode = reader.GetString("Admin_SRCode");
+
+                                    // Close the reader before executing another query
+                                    reader.Close();
+
+                                    string updateQuery = "UPDATE Admin SET LastLoginDate = NOW() WHERE Admin_SRCode = @SRCode";
+                                    using (MySqlCommand updateCmd = new MySqlCommand(updateQuery, conn))
+                                    {
+                                        updateCmd.Parameters.AddWithValue("@SRCode", enteredSRCode);
+                                        updateCmd.ExecuteNonQuery();
+                                    }
+
+                                    DashboardUI dashboard = new DashboardUI(adminName, srCode);
+                                    this.Hide();
+                                    dashboard.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Invalid password. Please try again.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid SR code. Please try again.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
                 }
-                else
-                {
-                    // If the reader has no rows, the SR code and/or password do not match any record in the database
-                    MessageBox.Show("Invalid SR code or password. Please try again.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                reader.Close(); // Close the data reader
-                conn.Close(); // Close the database connection
             }
             catch (Exception ex)
             {
-                // Handle any exceptions that occur during database access
                 MessageBox.Show("An error occurred while logging in: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

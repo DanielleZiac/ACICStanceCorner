@@ -72,5 +72,27 @@ namespace AdminPage
             UC_About uc = new UC_About();
             addUserControl(uc);
         }
+
+        private void adminLogout_Click(object sender, EventArgs e)
+        {
+            
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Check the user's response
+            if (result == DialogResult.Yes)
+            {
+                // If the user confirms the logout
+                // Show a message box indicating successful logout
+                MessageBox.Show("Logged out successfully.", "Log Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Show the login form
+                LogInFrm loginForm = new LogInFrm();
+                loginForm.Show();
+
+                // Close the current dashboard form
+                this.Close();
+            }
+            // If the user selects No, do nothing (keep the dashboard open)
+        }
     }
 }

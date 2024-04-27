@@ -122,6 +122,7 @@
             this.SRLogBox.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SRLogBox.ForeColor = System.Drawing.SystemColors.MenuText;
             this.SRLogBox.Location = new System.Drawing.Point(686, 206);
+            this.SRLogBox.MaxLength = 8;
             this.SRLogBox.Name = "SRLogBox";
             this.SRLogBox.Size = new System.Drawing.Size(389, 30);
             this.SRLogBox.TabIndex = 8;
