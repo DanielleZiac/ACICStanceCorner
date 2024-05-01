@@ -45,6 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AdminPage.Properties.Resources.TransactionBG;
             this.Controls.Add(this.label1);
             this.Name = "UC_Services";
             this.Size = new System.Drawing.Size(1060, 581);

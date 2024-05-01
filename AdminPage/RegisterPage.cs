@@ -1,30 +1,34 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using BCrypt;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Services;
+using Google.Apis.Sheets.v4;
+using static AdminPage.User_Controls.UC_Home;
 
 namespace AdminPage
 {
     public partial class RegisterPage : Form
     {
+        private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
+        private static readonly string ApplicationName = "ACICSTANCE CORNER";
+        private static readonly string SpreadsheetId = "1F9TzHOBa3T9CVMQEZ5hWJJ7T6kJHMg-phlonAfIzKTk";
+        private static readonly string SheetName = "AdminDetails";
+
+        private SheetsService _sheetsService;
+
         public RegisterPage()
         {
             InitializeComponent();
+
+            InitializeSheetsService();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void InitializeSheetsService()
         {
-
+            _sheetsService = SheetsServiceInitializer.InitializeSheetsServiceFromEnvVar();
         }
 
-  
 
         private void BackLog_Click(object sender, EventArgs e)
         {
@@ -33,31 +37,11 @@ namespace AdminPage
             loginPage.Show();
         }
 
-        private void PassRegBox_TextChanged(object sender, EventArgs e)
-        {
-            if (ShowPassReg.Checked)
-            {
-                // Display the actual text in the PassLogBox
-                PassRegBox.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                // Mask the text in the PassLogBox
-                PassRegBox.UseSystemPasswordChar = true;
-            }
-        }
-
-        private void ShowPassReg_CheckedChanged(object sender, EventArgs e)
-        {
-            PassRegBox_TextChanged(sender, e);
-        }
-
         private void Reg_Btn_Click(object sender, EventArgs e)
         {
-            string adminName = NameRegBox.Text.Replace("'", "''"); // Sanitize input by escaping single quotes
+            string adminName = NameRegBox.Text;
             string adminSRCode = SRRegBox.Text;
             string adminPassword = PassRegBox.Text;
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(adminPassword);
 
             if (adminSRCode.Length != 8)
             {
@@ -65,43 +49,83 @@ namespace AdminPage
                 return; // Exit the method if validation fails
             }
 
-            // Perform validation if necessary
-            if (String.IsNullOrEmpty(adminName) || String.IsNullOrEmpty(adminSRCode) || String.IsNullOrEmpty(adminPassword))
+            if (string.IsNullOrEmpty(adminName) || string.IsNullOrEmpty(adminSRCode) || string.IsNullOrEmpty(adminPassword))
             {
                 MessageBox.Show("All fields are required.", "Message Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            try
             {
-                try
+                // Check if SR code is already in use
+                if (IsSRCodeUnique(adminSRCode))
                 {
-                    string ConString = "datasource=localhost;database=ACICStance_Corner;username=root;password=navi#7oaaK6";
-                    string Query = $"INSERT INTO Admin (Admin_Name, Admin_SRCode, Admin_Password) VALUES ('{adminName}', '{adminSRCode}', '{hashedPassword}')";
-                    MySqlConnection conn = new MySqlConnection(ConString);
-                    MySqlCommand cmd = new MySqlCommand(Query, conn);
+                    // Hash the password using BCrypt
+                    string hashedPassword = BCrypt.Net.BCrypt.HashPassword(adminPassword);
 
-                    conn.Open();
-                    int rowsAffected = cmd.ExecuteNonQuery(); // Execute the query
-                    conn.Close();
+                    // Construct the values to be written to the spreadsheet
+                    var values = new List<IList<object>>
+            {
+                new List<object> { adminName, adminSRCode, hashedPassword }
+            };
 
-                    if (rowsAffected > 0)
+                    int rowCount = 100;// Define the range to write to
+                    string range = $"{SheetName}!A1:C{rowCount}";
+
+                    // Create a request to write data to the spreadsheet
+                    var request = _sheetsService.Spreadsheets.Values.Append(new Google.Apis.Sheets.v4.Data.ValueRange
                     {
-                        MessageBox.Show("Registered Successfully");
-                        LogInFrm loginPage = new LogInFrm();
-                        this.Hide();
-                        loginPage.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Registration failed.");
-                    }
+                        Values = values
+                    }, SpreadsheetId, range);
+
+                    // Execute the request
+                    request.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
+                    var response = request.Execute();
+
+                    MessageBox.Show("Registered Successfully");
+                    LogInFrm loginPage = new LogInFrm();
+                    this.Hide();
+                    loginPage.Show();
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Error while connecting: " + ex.Message, "Message info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("SR code is already in use.", "Registration Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while registering: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+        private bool IsSRCodeUnique(string srCode)
+        {
+            try
+            {
+                var range = $"{SheetName}!B:B"; // Column B contains the SR codes
+                var request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
+                var response = request.Execute();
+                var values = response.Values;
+
+                // Check if any SR code matches the input SR code
+                if (values != null)
+                {
+                    foreach (var row in values)
+                    {
+                        if (row.Count > 0 && row[0].ToString() == srCode)
+                        {
+                            return false; // SR code is not unique
+                        }
+                    }
+                }
+
+                return true; // SR code is unique
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error while checking SR code uniqueness: " + ex.Message);
+            }
+        }
+
     }
-    
 }

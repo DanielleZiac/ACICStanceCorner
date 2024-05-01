@@ -73,9 +73,29 @@ namespace AdminPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AboutBG {
+            get {
+                object obj = ResourceManager.GetObject("AboutBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap acc_logo {
             get {
                 object obj = ResourceManager.GetObject("acc_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AccountBG {
+            get {
+                object obj = ResourceManager.GetObject("AccountBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +156,16 @@ namespace AdminPage.Properties {
         internal static System.Drawing.Bitmap dog_house {
             get {
                 object obj = ResourceManager.GetObject("dog-house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap downloadbtn {
+            get {
+                object obj = ResourceManager.GetObject("downloadbtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +296,16 @@ namespace AdminPage.Properties {
         internal static System.Drawing.Bitmap transact_logo {
             get {
                 object obj = ResourceManager.GetObject("transact_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TransactionBG {
+            get {
+                object obj = ResourceManager.GetObject("TransactionBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

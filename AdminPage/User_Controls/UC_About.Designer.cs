@@ -28,33 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.DownloadBtn = new System.Windows.Forms.PictureBox();
+            this.aboutBG = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.DownloadBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutBG)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // DownloadBtn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(487, 279);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "About";
+            this.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
+            this.DownloadBtn.Image = global::AdminPage.Properties.Resources.downloadbtn;
+            this.DownloadBtn.Location = new System.Drawing.Point(636, 283);
+            this.DownloadBtn.Name = "DownloadBtn";
+            this.DownloadBtn.Size = new System.Drawing.Size(364, 111);
+            this.DownloadBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DownloadBtn.TabIndex = 4;
+            this.DownloadBtn.TabStop = false;
+            this.DownloadBtn.Click += new System.EventHandler(this.DownloadBtn_Click);
+            // 
+            // aboutBG
+            // 
+            this.aboutBG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.aboutBG.Image = global::AdminPage.Properties.Resources.AboutBG;
+            this.aboutBG.Location = new System.Drawing.Point(0, 0);
+            this.aboutBG.Name = "aboutBG";
+            this.aboutBG.Size = new System.Drawing.Size(1060, 581);
+            this.aboutBG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.aboutBG.TabIndex = 3;
+            this.aboutBG.TabStop = false;
             // 
             // UC_About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DownloadBtn);
+            this.Controls.Add(this.aboutBG);
             this.Name = "UC_About";
             this.Size = new System.Drawing.Size(1060, 581);
+            ((System.ComponentModel.ISupportInitialize)(this.DownloadBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aboutBG)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox aboutBG;
+        private System.Windows.Forms.PictureBox DownloadBtn;
     }
 }

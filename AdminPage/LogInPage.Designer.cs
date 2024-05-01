@@ -33,11 +33,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.CreateLink = new System.Windows.Forms.LinkLabel();
             this.ShowPassLog = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SRLogBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.PassLogBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,17 +106,6 @@
             this.ShowPassLog.UseVisualStyleBackColor = true;
             this.ShowPassLog.CheckedChanged += new System.EventHandler(this.ShowPassLog_CheckedChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::AdminPage.Properties.Resources.LogIn;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1130, 634);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // SRLogBox
             // 
             this.SRLogBox.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,7 +147,18 @@
             this.PassLogBox.Size = new System.Drawing.Size(389, 30);
             this.PassLogBox.TabIndex = 11;
             this.PassLogBox.UseSystemPasswordChar = true;
-            this.PassLogBox.TextChanged += new System.EventHandler(this.PassLogBox_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::AdminPage.Properties.Resources.LogIn;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1130, 634);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+
             // 
             // LogInFrm
             // 

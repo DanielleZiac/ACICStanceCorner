@@ -54,7 +54,6 @@
             this.ShowPassReg.TabIndex = 11;
             this.ShowPassReg.Text = "Show Password";
             this.ShowPassReg.UseVisualStyleBackColor = true;
-            this.ShowPassReg.CheckedChanged += new System.EventHandler(this.ShowPassReg_CheckedChanged);
             // 
             // Reg_Btn
             // 
@@ -93,7 +92,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -134,8 +132,7 @@
             this.PassRegBox.Size = new System.Drawing.Size(389, 30);
             this.PassRegBox.TabIndex = 14;
             this.PassRegBox.UseSystemPasswordChar = true;
-            this.PassRegBox.TextChanged += new System.EventHandler(this.PassRegBox_TextChanged);
-            // 
+           
             // label2
             // 
             this.label2.AutoSize = true;

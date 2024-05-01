@@ -16,5 +16,10 @@ namespace AdminPage.User_Controls
         {
             InitializeComponent();
         }
+
+        private void Transaction_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
