@@ -14,8 +14,7 @@ namespace AdminPage
     public partial class LogInFrm : Form
     {
         private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
-        private static readonly string ApplicationName = "ACICSTANCE CORNER";
-        private static readonly string SpreadsheetId = "1F9TzHOBa3T9CVMQEZ5hWJJ7T6kJHMg-phlonAfIzKTk";
+        private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly string SheetName = "AdminDetails";
         private AdminPage.Users.Users LoggedInUser { get; set; }
         private SheetsService _sheetsService;
@@ -83,7 +82,7 @@ namespace AdminPage
                             if (BCrypt.Net.BCrypt.Verify(enteredPassword, hashedPasswordFromDatabase))
                             {
                                 // Update last login date
-                                var updateValues = new List<IList<object>> { new List<object> { DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") } };
+                                var updateValues = new List<IList<object>> { new List<object> { DateTime.Now.ToString("yyyy-MM-dd HH:mm") } };
                                 var updateRange = $"{SheetName}!D{values.IndexOf(row) + 1}";
                                 var updateRequest = new Google.Apis.Sheets.v4.Data.ValueRange { Values = updateValues };
                                 var updateUpdateRequest = _sheetsService.Spreadsheets.Values.Update(updateRequest, SpreadsheetId, updateRange);

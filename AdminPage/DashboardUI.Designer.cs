@@ -83,7 +83,7 @@
             this.About_Btn.ForeColor = System.Drawing.SystemColors.Control;
             this.About_Btn.Image = global::AdminPage.Properties.Resources.about_logo;
             this.About_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.About_Btn.Location = new System.Drawing.Point(0, 467);
+            this.About_Btn.Location = new System.Drawing.Point(0, 452);
             this.About_Btn.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.About_Btn.Name = "About_Btn";
             this.About_Btn.Size = new System.Drawing.Size(200, 43);
@@ -178,7 +178,7 @@
             // 
             this.SRLabel.AutoSize = true;
             this.SRLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SRLabel.Location = new System.Drawing.Point(852, 57);
+            this.SRLabel.Location = new System.Drawing.Point(813, 57);
             this.SRLabel.Name = "SRLabel";
             this.SRLabel.Size = new System.Drawing.Size(63, 17);
             this.SRLabel.TabIndex = 5;
@@ -188,7 +188,7 @@
             // 
             this.AdminLabel.AutoSize = true;
             this.AdminLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminLabel.Location = new System.Drawing.Point(852, 40);
+            this.AdminLabel.Location = new System.Drawing.Point(813, 39);
             this.AdminLabel.Name = "AdminLabel";
             this.AdminLabel.Size = new System.Drawing.Size(94, 17);
             this.AdminLabel.TabIndex = 4;
@@ -197,7 +197,7 @@
             // adminLogout
             // 
             this.adminLogout.Image = ((System.Drawing.Image)(resources.GetObject("adminLogout.Image")));
-            this.adminLogout.Location = new System.Drawing.Point(796, 31);
+            this.adminLogout.Location = new System.Drawing.Point(757, 29);
             this.adminLogout.Name = "adminLogout";
             this.adminLogout.Size = new System.Drawing.Size(50, 50);
             this.adminLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

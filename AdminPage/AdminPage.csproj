@@ -146,6 +146,7 @@
     <Compile Include="RegisterPage.Designer.cs">
       <DependentUpon>RegisterPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="SheetServiceInitializer.cs" />
     <Compile Include="Users\user.cs" />
     <Compile Include="User_Controls\UC_About.cs">
       <SubType>UserControl</SubType>
@@ -270,6 +271,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TransactionBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accountUI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reloadIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoiceplate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoiceBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoiceBG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detailsBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transactimg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

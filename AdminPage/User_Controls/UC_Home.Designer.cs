@@ -36,7 +36,11 @@
             this.AddTaskBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.UserLabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ApprovedLabel = new System.Windows.Forms.Label();
+            this.PendingLabel = new System.Windows.Forms.Label();
             this.TasksGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +79,6 @@
             this.CheckedTask.Name = "CheckedTask";
             this.CheckedTask.Size = new System.Drawing.Size(170, 294);
             this.CheckedTask.TabIndex = 2;
-            this.CheckedTask.SelectedIndexChanged += new System.EventHandler(this.CheckedTask_SelectedIndexChanged);
             // 
             // TaskType
             // 
@@ -107,9 +110,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(88, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 23);
+            this.label1.Size = new System.Drawing.Size(89, 23);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Pending Approvals";
+            this.label1.Text = "Pending";
             // 
             // label2
             // 
@@ -123,6 +126,30 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Approved";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(107)))), ((int)(((byte)(175)))));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(550, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 23);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Users";
+            // 
+            // UserLabel
+            // 
+            this.UserLabel.AutoSize = true;
+            this.UserLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(107)))), ((int)(((byte)(175)))));
+            this.UserLabel.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UserLabel.Location = new System.Drawing.Point(547, 83);
+            this.UserLabel.Name = "UserLabel";
+            this.UserLabel.Size = new System.Drawing.Size(35, 39);
+            this.UserLabel.TabIndex = 9;
+            this.UserLabel.Text = "0";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -134,10 +161,38 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // ApprovedLabel
+            // 
+            this.ApprovedLabel.AutoSize = true;
+            this.ApprovedLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(198)))), ((int)(((byte)(230)))));
+            this.ApprovedLabel.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApprovedLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ApprovedLabel.Location = new System.Drawing.Point(329, 83);
+            this.ApprovedLabel.Name = "ApprovedLabel";
+            this.ApprovedLabel.Size = new System.Drawing.Size(35, 39);
+            this.ApprovedLabel.TabIndex = 13;
+            this.ApprovedLabel.Text = "0";
+            // 
+            // PendingLabel
+            // 
+            this.PendingLabel.AutoSize = true;
+            this.PendingLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(160)))), ((int)(((byte)(216)))));
+            this.PendingLabel.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PendingLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PendingLabel.Location = new System.Drawing.Point(95, 83);
+            this.PendingLabel.Name = "PendingLabel";
+            this.PendingLabel.Size = new System.Drawing.Size(35, 39);
+            this.PendingLabel.TabIndex = 14;
+            this.PendingLabel.Text = "0";
+            // 
             // UC_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.PendingLabel);
+            this.Controls.Add(this.ApprovedLabel);
+            this.Controls.Add(this.UserLabel);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AddTaskBtn);
@@ -162,5 +217,9 @@
         private System.Windows.Forms.CheckedListBox CheckedTask;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label UserLabel;
+        private System.Windows.Forms.Label ApprovedLabel;
+        private System.Windows.Forms.Label PendingLabel;
     }
 }

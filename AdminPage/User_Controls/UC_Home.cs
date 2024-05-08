@@ -20,7 +20,7 @@ namespace AdminPage.User_Controls
     {
         private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
         private static readonly string ApplicationName = "ACICSTANCE CORNER";
-        private static readonly string SpreadsheetId = "1F9TzHOBa3T9CVMQEZ5hWJJ7T6kJHMg-phlonAfIzKTk";
+        private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly string SheetName = "AdminDetails";
         private string _currentUserSRCode;
 
@@ -63,10 +63,13 @@ namespace AdminPage.User_Controls
             _currentUserSRCode = CurrentUser.LoggedInUser?.SRCode;
 
             // Load tasks for the current user
-            LoadTasksForCurrentUser();
+            _ = LoadTasksForCurrentUserAsync();
+            UpdateCountLabel("TransactionSheet", ApprovedLabel);
+            UpdateCountLabel("ApprovalSheet", PendingLabel, "Pending");
+            UpdateCountLabel("UserAccount", UserLabel);
         }
 
-        private void AddTaskBtn_Click(object sender, EventArgs e)
+        private async void AddTaskBtn_Click(object sender, EventArgs e)
         {
             string taskType = TaskType.Text;
 
@@ -90,7 +93,7 @@ namespace AdminPage.User_Controls
                 // Get the number of existing tasks in the AdminTask sheet to determine the next empty row
                 var range = "AdminTask!A:A";
                 var request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
-                var response = request.Execute();
+                var response = await request.ExecuteAsync();
                 var numRows = response.Values != null ? response.Values.Count : 0;
 
                 // Define the range to write to (start from the next empty row)
@@ -104,11 +107,11 @@ namespace AdminPage.User_Controls
 
                 // Execute the request
                 appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
-                var appendResponse = appendRequest.Execute();
+                var appendResponse = await appendRequest.ExecuteAsync();
 
                 MessageBox.Show("Task added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 TaskType.Text = "";
-                LoadTasksForCurrentUser();
+                await LoadTasksForCurrentUserAsync();
             }
             catch (Exception ex)
             {
@@ -120,14 +123,14 @@ namespace AdminPage.User_Controls
         {
 
         }
-        private void LoadTasksForCurrentUser()
+        private async Task LoadTasksForCurrentUserAsync()
         {
             // Clear existing items in the checkedTask CheckedListBox
             try
             {
                 var range = "AdminTask!A:B"; // Assuming the task data is in columns A and B
                 var request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
-                var response = request.Execute();
+                var response = await request.ExecuteAsync();
                 var values = response.Values;
 
                 if (values != null && values.Count > 0)
@@ -157,15 +160,6 @@ namespace AdminPage.User_Controls
         }
 
         // Call this method whenever you want to load tasks for the current user, such as in the form load event
-        private void Form_Load(object sender, EventArgs e)
-        {
-            LoadTasksForCurrentUser();
-        }
-
-        private void CheckedTask_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void DoneTask_Click(object sender, EventArgs e)
         {
@@ -220,5 +214,78 @@ namespace AdminPage.User_Controls
                 MessageBox.Show("Error while deleting tasks: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+     
+
+        private void UpdateCountLabel(string sheetName, Label label)
+        {
+            try
+            {
+                // Define the range to read from
+                string range = $"{sheetName}!A:A";
+
+                // Make the request to get data from the spreadsheet
+                var request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
+                var response = request.Execute();
+                var values = response.Values;
+
+                // If values are retrieved successfully
+                if (values != null && values.Count > 0)
+                {
+                    // Update the text of the provided label with the number of rows in the sheet
+                    label.Text = (values.Count - 1).ToString(); // Exclude header row
+                }
+                else
+                {
+                    // No data found in the spreadsheet
+                    label.Text = "0";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Display an error message if an exception occurs
+                MessageBox.Show($"Error retrieving row count from {sheetName}: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void UpdateCountLabel(string sheetName, Label label, string status)
+        {
+            try
+            {
+                // Define the range to read from
+                string range = $"{sheetName}!F:F"; // Assuming the status column is in column F
+
+                // Make the request to get data from the spreadsheet
+                var request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
+                var response = request.Execute();
+                var values = response.Values;
+
+                // If values are retrieved successfully
+                if (values != null && values.Count > 0)
+                {
+                    // Count the number of rows with the specified status
+                    int count = values.Count(row => row.Count > 0 && row[0].ToString().ToLower() == status.ToLower());
+
+                    // Update the text of the provided label with the number of rows with the specified status
+                    label.Text = count.ToString();
+                }
+                else
+                {
+                    // No data found in the spreadsheet
+                    label.Text = "0";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Display an error message if an exception occurs
+                MessageBox.Show($"Error retrieving row count from {sheetName}: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void reload_Click_1(object sender, EventArgs e)
+        {
+     
+        }
+
     }
 }

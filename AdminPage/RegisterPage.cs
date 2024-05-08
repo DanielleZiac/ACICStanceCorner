@@ -11,8 +11,7 @@ namespace AdminPage
     public partial class RegisterPage : Form
     {
         private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
-        private static readonly string ApplicationName = "ACICSTANCE CORNER";
-        private static readonly string SpreadsheetId = "1F9TzHOBa3T9CVMQEZ5hWJJ7T6kJHMg-phlonAfIzKTk";
+        private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly string SheetName = "AdminDetails";
 
         private SheetsService _sheetsService;

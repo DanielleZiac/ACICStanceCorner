@@ -103,6 +103,16 @@ namespace AdminPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap accountUI {
+            get {
+                object obj = ResourceManager.GetObject("accountUI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ACICStance {
             get {
                 object obj = ResourceManager.GetObject("ACICStance", resourceCulture);
@@ -153,6 +163,16 @@ namespace AdminPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap detailsBG {
+            get {
+                object obj = ResourceManager.GetObject("detailsBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dog_house {
             get {
                 object obj = ResourceManager.GetObject("dog-house", resourceCulture);
@@ -196,6 +216,36 @@ namespace AdminPage.Properties {
         internal static System.Drawing.Bitmap image_removebg_preview__1_ {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap invoiceBG {
+            get {
+                object obj = ResourceManager.GetObject("invoiceBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap invoiceBG1 {
+            get {
+                object obj = ResourceManager.GetObject("invoiceBG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap invoiceplate {
+            get {
+                object obj = ResourceManager.GetObject("invoiceplate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +333,16 @@ namespace AdminPage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reloadIcon {
+            get {
+                object obj = ResourceManager.GetObject("reloadIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap services_logo {
             get {
                 object obj = ResourceManager.GetObject("services_logo", resourceCulture);
@@ -296,6 +356,16 @@ namespace AdminPage.Properties {
         internal static System.Drawing.Bitmap transact_logo {
             get {
                 object obj = ResourceManager.GetObject("transact_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transactimg {
+            get {
+                object obj = ResourceManager.GetObject("transactimg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -16,6 +16,11 @@ namespace AdminPage
         private string adminName;
         private string srCode;
         private UserControl currentUC = null;
+        UC_Home uc_home = new UC_Home();
+        UC_Services uc_services = new UC_Services();
+        UC_Transaction uc_transaction = new UC_Transaction();
+        UC_Account uc_account = new UC_Account();
+        UC_About uc_About = new UC_About();
         public DashboardUI(string adminName, string srCode)
         {
             InitializeComponent();
@@ -47,17 +52,17 @@ namespace AdminPage
 
         private void Services_Btn_Click(object sender, EventArgs e)
         {
-           load_UC(new UC_Services());
+           load_UC(uc_services);
         }
 
         private void Acc_Btn_Click(object sender, EventArgs e)
         {
-            load_UC(new UC_Account());
+            load_UC(uc_account);
         }
 
         private void About_Btn_Click(object sender, EventArgs e)
         {
-            load_UC(new UC_About());
+            load_UC(uc_About);
         }
 
         private void load_UC(UserControl uc)
@@ -101,5 +106,7 @@ namespace AdminPage
             }
             // If the user selects No, do nothing (keep the dashboard open)
         }
+
+      
     }
 }
