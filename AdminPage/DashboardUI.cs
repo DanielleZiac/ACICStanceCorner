@@ -28,60 +28,45 @@ namespace AdminPage
             this.adminName = adminName;
             this.srCode = srCode;
         }
-
         private void DashboardUI_Load(object sender, EventArgs e)
         {
             AdminLabel.Text = adminName; // Update the admin label with the admin name
             SRLabel.Text = srCode; // Update the SR label with the SR code
-        }
-      
+        }     
         private void exitBtn_Click(object sender, EventArgs e)
         {
            Application.Exit();
         }
-
         private void Home_Btn_Click(object sender, EventArgs e)
         {
            load_UC(new UC_Home());
         }
-
         private void Transact_Btn_Click(object sender, EventArgs e)
         {
            load_UC(new UC_Transaction());
         }
-
         private void Services_Btn_Click(object sender, EventArgs e)
         {
            load_UC(uc_services);
         }
-
         private void Acc_Btn_Click(object sender, EventArgs e)
         {
             load_UC(uc_account);
         }
-
         private void About_Btn_Click(object sender, EventArgs e)
         {
             load_UC(uc_About);
         }
-
         private void load_UC(UserControl uc)
         {
-            // Check if the clicked button corresponds to the currently loaded user control
             if (currentUC != null && currentUC.GetType() == uc.GetType())
             {
-                return; // Do nothing if the same user control is already loaded
+                return; 
             }
-
-            // Clear existing control
             panelContainer.Controls.Clear();
-
-            // Add new user control
             uc.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(uc);
             uc.BringToFront();
-
-            // Update currentUC reference
             currentUC = uc;
         }
 
@@ -90,23 +75,16 @@ namespace AdminPage
             
             DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Log Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            // Check the user's response
             if (result == DialogResult.Yes)
             {
-                // If the user confirms the logout
-                // Show a message box indicating successful logout
+            
                 MessageBox.Show("Logged out successfully.", "Log Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Show the login form
                 LogInFrm loginForm = new LogInFrm();
                 loginForm.Show();
 
-                // Close the current dashboard form
                 this.Close();
             }
-            // If the user selects No, do nothing (keep the dashboard open)
         }
-
-      
     }
 }

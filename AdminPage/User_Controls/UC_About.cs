@@ -20,10 +20,7 @@ namespace AdminPage.User_Controls
 
         private void DownloadBtn_Click(object sender, EventArgs e)
         {
-            // Replace the URL below with the GitHub repository URL
             string githubRepoUrl = "https://github.com/DanielleZiac/ACICStanceCorner";
-
-            // Display a message box asking the user to confirm redirection to GitHub
             DialogResult result = MessageBox.Show("You will be directed to GitHub. Continue?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)

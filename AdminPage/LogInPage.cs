@@ -8,6 +8,7 @@ using BCrypt;
 using System.Collections.Generic;
 using static AdminPage.User_Controls.UC_Home;
 using AdminPage.Users;
+using System.Threading.Tasks;
 
 namespace AdminPage
 {
@@ -18,14 +19,14 @@ namespace AdminPage
         private static readonly string SheetName = "AdminDetails";
         private AdminPage.Users.Users LoggedInUser { get; set; }
         private SheetsService _sheetsService;
+        private readonly GoogleSheetsService _googleSheetsService;
 
         public LogInFrm()
         {
+            _sheetsService = SheetServiceInitializer.Instance;
+            _googleSheetsService = new GoogleSheetsService();
             InitializeComponent();
-            _sheetsService = SheetsServiceInitializer.InitializeSheetsServiceFromEnvVar();
         }
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -42,17 +43,14 @@ namespace AdminPage
         {
             if (ShowPassLog.Checked)
             {
-                // Display the actual text in the password textbox
                 PassLogBox.UseSystemPasswordChar = false;
             }
             else
-            {
-                // Mask the text in the password textbox
+            {              
                 PassLogBox.UseSystemPasswordChar = true;
             }
         }
-
-        private void LogInBtn_Click(object sender, EventArgs e)
+        private async void LogInBtn_Click(object sender, EventArgs e)
         {
             string enteredSRCode = SRLogBox.Text;
             string enteredPassword = PassLogBox.Text;
@@ -60,16 +58,12 @@ namespace AdminPage
             if (enteredSRCode.Length != 8)
             {
                 MessageBox.Show("SR code must be 8 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Exit the method if validation fails
+                return; 
             }
-
             try
-            {
-                // Retrieve data from Google Sheets
+            {              
                 var range = $"{SheetName}!A:C";
-                var request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
-                var response = request.Execute();
-                var values = response.Values;
+                var values = await _googleSheetsService.GetValuesAsync(range);
 
                 if (values != null && values.Count > 0)
                 {
@@ -120,8 +114,6 @@ namespace AdminPage
                 MessageBox.Show("An error occurred while logging in: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
 
     }
 }

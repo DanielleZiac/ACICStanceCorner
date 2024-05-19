@@ -62,13 +62,13 @@
             this.panelButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelButton.Location = new System.Drawing.Point(0, 0);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(200, 699);
+            this.panelButton.Size = new System.Drawing.Size(220, 817);
             this.panelButton.TabIndex = 0;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AdminPage.Properties.Resources.image_removebg_preview__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(36, 119);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(116, 115);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,14 +79,14 @@
             // 
             this.About_Btn.FlatAppearance.BorderSize = 0;
             this.About_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.About_Btn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.About_Btn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.About_Btn.ForeColor = System.Drawing.SystemColors.Control;
             this.About_Btn.Image = global::AdminPage.Properties.Resources.about_logo;
             this.About_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.About_Btn.Location = new System.Drawing.Point(0, 452);
+            this.About_Btn.Location = new System.Drawing.Point(0, 559);
             this.About_Btn.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.About_Btn.Name = "About_Btn";
-            this.About_Btn.Size = new System.Drawing.Size(200, 43);
+            this.About_Btn.Size = new System.Drawing.Size(220, 43);
             this.About_Btn.TabIndex = 8;
             this.About_Btn.Text = "About";
             this.About_Btn.UseVisualStyleBackColor = true;
@@ -96,14 +96,14 @@
             // 
             this.Acc_Btn.FlatAppearance.BorderSize = 0;
             this.Acc_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Acc_Btn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Acc_Btn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Acc_Btn.ForeColor = System.Drawing.SystemColors.Control;
             this.Acc_Btn.Image = global::AdminPage.Properties.Resources.acc_logo;
             this.Acc_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Acc_Btn.Location = new System.Drawing.Point(0, 382);
+            this.Acc_Btn.Location = new System.Drawing.Point(0, 489);
             this.Acc_Btn.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.Acc_Btn.Name = "Acc_Btn";
-            this.Acc_Btn.Size = new System.Drawing.Size(200, 43);
+            this.Acc_Btn.Size = new System.Drawing.Size(220, 43);
             this.Acc_Btn.TabIndex = 7;
             this.Acc_Btn.Text = "Account";
             this.Acc_Btn.UseVisualStyleBackColor = true;
@@ -113,14 +113,14 @@
             // 
             this.Services_Btn.FlatAppearance.BorderSize = 0;
             this.Services_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Services_Btn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Services_Btn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Services_Btn.ForeColor = System.Drawing.SystemColors.Control;
             this.Services_Btn.Image = global::AdminPage.Properties.Resources.services_logo;
             this.Services_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Services_Btn.Location = new System.Drawing.Point(0, 308);
+            this.Services_Btn.Location = new System.Drawing.Point(0, 415);
             this.Services_Btn.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.Services_Btn.Name = "Services_Btn";
-            this.Services_Btn.Size = new System.Drawing.Size(200, 43);
+            this.Services_Btn.Size = new System.Drawing.Size(220, 43);
             this.Services_Btn.TabIndex = 6;
             this.Services_Btn.Text = "Services";
             this.Services_Btn.UseVisualStyleBackColor = true;
@@ -130,14 +130,14 @@
             // 
             this.Transact_Btn.FlatAppearance.BorderSize = 0;
             this.Transact_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Transact_Btn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Transact_Btn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Transact_Btn.ForeColor = System.Drawing.SystemColors.Control;
             this.Transact_Btn.Image = global::AdminPage.Properties.Resources.transact_logo;
             this.Transact_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Transact_Btn.Location = new System.Drawing.Point(0, 235);
+            this.Transact_Btn.Location = new System.Drawing.Point(0, 342);
             this.Transact_Btn.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.Transact_Btn.Name = "Transact_Btn";
-            this.Transact_Btn.Size = new System.Drawing.Size(200, 43);
+            this.Transact_Btn.Size = new System.Drawing.Size(220, 43);
             this.Transact_Btn.TabIndex = 5;
             this.Transact_Btn.Text = "Transaction";
             this.Transact_Btn.UseVisualStyleBackColor = true;
@@ -147,14 +147,14 @@
             // 
             this.Home_Btn.FlatAppearance.BorderSize = 0;
             this.Home_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Home_Btn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Home_Btn.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Home_Btn.ForeColor = System.Drawing.SystemColors.Control;
             this.Home_Btn.Image = global::AdminPage.Properties.Resources.home_logo;
             this.Home_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Home_Btn.Location = new System.Drawing.Point(0, 164);
+            this.Home_Btn.Location = new System.Drawing.Point(0, 271);
             this.Home_Btn.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.Home_Btn.Name = "Home_Btn";
-            this.Home_Btn.Size = new System.Drawing.Size(200, 43);
+            this.Home_Btn.Size = new System.Drawing.Size(220, 43);
             this.Home_Btn.TabIndex = 0;
             this.Home_Btn.Text = "Home";
             this.Home_Btn.UseVisualStyleBackColor = true;
@@ -169,9 +169,9 @@
             this.panelHeader.Controls.Add(this.pictureBox1);
             this.panelHeader.Controls.Add(this.exitBtn);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Location = new System.Drawing.Point(200, 0);
+            this.panelHeader.Location = new System.Drawing.Point(220, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1070, 100);
+            this.panelHeader.Size = new System.Drawing.Size(1167, 100);
             this.panelHeader.TabIndex = 1;
             // 
             // SRLabel
@@ -187,19 +187,19 @@
             // AdminLabel
             // 
             this.AdminLabel.AutoSize = true;
-            this.AdminLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminLabel.Location = new System.Drawing.Point(813, 39);
+            this.AdminLabel.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminLabel.Location = new System.Drawing.Point(813, 35);
             this.AdminLabel.Name = "AdminLabel";
-            this.AdminLabel.Size = new System.Drawing.Size(94, 17);
+            this.AdminLabel.Size = new System.Drawing.Size(105, 18);
             this.AdminLabel.TabIndex = 4;
             this.AdminLabel.Text = "Admin Name";
             // 
             // adminLogout
             // 
             this.adminLogout.Image = ((System.Drawing.Image)(resources.GetObject("adminLogout.Image")));
-            this.adminLogout.Location = new System.Drawing.Point(757, 29);
+            this.adminLogout.Location = new System.Drawing.Point(750, 21);
             this.adminLogout.Name = "adminLogout";
-            this.adminLogout.Size = new System.Drawing.Size(50, 50);
+            this.adminLogout.Size = new System.Drawing.Size(57, 58);
             this.adminLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.adminLogout.TabIndex = 3;
             this.adminLogout.TabStop = false;
@@ -220,7 +220,7 @@
             this.exitBtn.AutoSize = true;
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.exitBtn.Location = new System.Drawing.Point(1035, 9);
+            this.exitBtn.Location = new System.Drawing.Point(1102, 21);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(23, 25);
             this.exitBtn.TabIndex = 1;
@@ -231,16 +231,16 @@
             // 
             this.panelContainer.BackColor = System.Drawing.SystemColors.HighlightText;
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(200, 100);
+            this.panelContainer.Location = new System.Drawing.Point(220, 100);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1070, 599);
+            this.panelContainer.Size = new System.Drawing.Size(1167, 717);
             this.panelContainer.TabIndex = 2;
             // 
             // DashboardUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 699);
+            this.ClientSize = new System.Drawing.Size(1387, 817);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelButton);

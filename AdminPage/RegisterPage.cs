@@ -1,34 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
-using static AdminPage.User_Controls.UC_Home;
 
 namespace AdminPage
 {
     public partial class RegisterPage : Form
     {
-        private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
         private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly string SheetName = "AdminDetails";
-
+        private readonly GoogleSheetsService _googleSheetsService;
         private SheetsService _sheetsService;
-
         public RegisterPage()
         {
             InitializeComponent();
-
-            InitializeSheetsService();
+            _googleSheetsService = new GoogleSheetsService();
+            _sheetsService = _googleSheetsService.GetSheetsService();
         }
-
-        private void InitializeSheetsService()
-        {
-            _sheetsService = SheetsServiceInitializer.InitializeSheetsServiceFromEnvVar();
-        }
-
-
         private void BackLog_Click(object sender, EventArgs e)
         {
             LogInFrm loginPage = new LogInFrm();
@@ -36,7 +27,7 @@ namespace AdminPage
             loginPage.Show();
         }
 
-        private void Reg_Btn_Click(object sender, EventArgs e)
+        private async void Reg_Btn_Click(object sender, EventArgs e)
         {
             string adminName = NameRegBox.Text;
             string adminSRCode = SRRegBox.Text;
@@ -45,7 +36,7 @@ namespace AdminPage
             if (adminSRCode.Length != 8)
             {
                 MessageBox.Show("SR code must be 8 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Exit the method if validation fails
+                return;
             }
 
             if (string.IsNullOrEmpty(adminName) || string.IsNullOrEmpty(adminSRCode) || string.IsNullOrEmpty(adminPassword))
@@ -56,30 +47,25 @@ namespace AdminPage
 
             try
             {
-                // Check if SR code is already in use
-                if (IsSRCodeUnique(adminSRCode))
+                if (await IsSRCodeUnique(adminSRCode))
                 {
-                    // Hash the password using BCrypt
                     string hashedPassword = BCrypt.Net.BCrypt.HashPassword(adminPassword);
 
-                    // Construct the values to be written to the spreadsheet
                     var values = new List<IList<object>>
-            {
-                new List<object> { adminName, adminSRCode, hashedPassword }
-            };
+                    {
+                        new List<object> { adminName, adminSRCode, hashedPassword }
+                    };
 
-                    int rowCount = 100;// Define the range to write to
+                    int rowCount = 100;
                     string range = $"{SheetName}!A1:C{rowCount}";
 
-                    // Create a request to write data to the spreadsheet
                     var request = _sheetsService.Spreadsheets.Values.Append(new Google.Apis.Sheets.v4.Data.ValueRange
                     {
                         Values = values
                     }, SpreadsheetId, range);
 
-                    // Execute the request
                     request.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
-                    var response = request.Execute();
+                    var response = await request.ExecuteAsync();
 
                     MessageBox.Show("Registered Successfully");
                     LogInFrm loginPage = new LogInFrm();
@@ -97,34 +83,30 @@ namespace AdminPage
             }
         }
 
-        private bool IsSRCodeUnique(string srCode)
+        private async Task<bool> IsSRCodeUnique(string srCode)
         {
             try
             {
-                var range = $"{SheetName}!B:B"; // Column B contains the SR codes
-                var request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
-                var response = request.Execute();
-                var values = response.Values;
+                var range = $"{SheetName}!B:B"; 
+                var values = await _googleSheetsService.GetValuesAsync(range);
 
-                // Check if any SR code matches the input SR code
                 if (values != null)
                 {
                     foreach (var row in values)
                     {
                         if (row.Count > 0 && row[0].ToString() == srCode)
                         {
-                            return false; // SR code is not unique
+                            return false;
                         }
                     }
                 }
 
-                return true; // SR code is unique
+                return true; 
             }
             catch (Exception ex)
             {
                 throw new Exception("Error while checking SR code uniqueness: " + ex.Message);
             }
         }
-
     }
 }

@@ -18,27 +18,15 @@ namespace AdminPage.User_Controls
         private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly string SheetName = "AdminDetails";
         private static readonly string SheetName1 = "UserAccount";
-        private SheetServiceInitializer _sheetServiceInitializer;
         private SheetsService _sheetsService;
-
+        private readonly GoogleSheetsService _googleSheetsService;
         public UC_Account()
         {
             InitializeComponent();
-            InitializeSheetService();
+            _googleSheetsService = new GoogleSheetsService();
+            _sheetsService = _googleSheetsService.GetSheetsService();
         }
-        private void InitializeSheetService()
-        {
-            try
-            {
-                _sheetsService = SheetServiceInitializer.InitializeSheetsServiceFromEnvVar();
-                _sheetServiceInitializer = new SheetServiceInitializer();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error initializing Sheet Service: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
+      
         private async void UC_Account_Load(object sender, EventArgs e)
         {
             try
@@ -54,38 +42,31 @@ namespace AdminPage.User_Controls
 
         private async Task PopulateDataGridViewAsync()
         {
-            var range = $"{SheetName}!A2:D"; // Adjust the range based on your spreadsheet structure
-            var values = await _sheetServiceInitializer.FetchValuesFromSheetAsync(range);
-
-            // Clear existing data in DataGridView
+            var range = $"{SheetName}!A2:D"; 
+            var values = await _googleSheetsService.GetValuesAsync(range);
             dataGridView1.Rows.Clear();
 
             if (values != null && values.Count > 0)
             {
                 foreach (var row in values)
                 {
-                    // Check if the row has enough elements
                     if (row.Count >= 4)
                     {
                         string adminName = row[0]?.ToString() ?? "N/A";
                         string adminSRCode = row[1]?.ToString() ?? "N/A";
                         DateTime adminLastLog;
 
-                        // Parse the last login date from string to DateTime
                         if (DateTime.TryParse(row[3]?.ToString(), out adminLastLog))
                         {
-                            // Add name, srcode, and last login date to the DataGridView
                             dataGridView1.Rows.Add(adminName, adminSRCode, adminLastLog);
                         }
                         else
                         {
-                            // If parsing fails, add empty string for the last login date
                             dataGridView1.Rows.Add(adminName, adminSRCode, "");
                         }
                     }
                     else
                     {
-                        // Log a warning if the row doesn't have enough elements
                         Console.WriteLine("Row does not have enough elements.");
                     }
                 }
@@ -98,39 +79,57 @@ namespace AdminPage.User_Controls
 
         private async Task PopulateUserAccountTableAsync()
         {
-            var range = $"{SheetName1}!A2:C"; // Adjust the range based on your spreadsheet structure
-            var values = await _sheetServiceInitializer.FetchValuesFromSheetAsync(range);
+            var userAccountRange = $"{SheetName1}!A2:C";
+            var userAccountValues = await _googleSheetsService.GetValuesAsync(userAccountRange);
 
-            // Clear existing data in UserAccountTbl
+            var transactionRange = $"TransactionSheet!A2:B"; 
+            var transactionValues = await _googleSheetsService.GetValuesAsync(transactionRange);
+
             UserAccountTbl.Rows.Clear();
 
-            if (values != null && values.Count > 0)
+            if (userAccountValues != null && userAccountValues.Count > 0)
             {
-                foreach (var row in values)
+                foreach (var userAccountRow in userAccountValues)
                 {
-                    // Check if the row has enough elements
-                    if (row.Count >= 3)
+                    if (userAccountRow.Count >= 3)
                     {
-                        string userName = row[0]?.ToString() ?? "N/A";
-                        string userSRCode = row[2]?.ToString() ?? "N/A";
+                        string userName = userAccountRow[0]?.ToString() ?? "N/A";
+                        string userSRCode = userAccountRow[2]?.ToString() ?? "N/A";
 
-                        // Add name, srcode, and an empty string for transactions to the DataGridView
-                        UserAccountTbl.Rows.Add(userName, userSRCode, "");
+                        // Count occurrences of SR code in transaction sheet
+                        int transactionCount = CountTransactionOccurrences(userSRCode, transactionValues);
+
+                        // Add name, srcode, and transaction count to the DataGridView
+                        UserAccountTbl.Rows.Add(userName, userSRCode, transactionCount);
                     }
                     else
                     {
-                        // Log a warning if the row doesn't have enough elements
                         Console.WriteLine("Row does not have enough elements.");
                     }
                 }
             }
             else
             {
-                Console.WriteLine("No data found in the spreadsheet.", "Message info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Console.WriteLine("No data found in the user account spreadsheet.", "Message info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
-        // Method to manually reload the data when needed
+        private int CountTransactionOccurrences(string userSRCode, IList<IList<object>> transactionValues)
+        {
+            if (transactionValues != null)
+            {
+                int count = 0;
+                foreach (var transactionRow in transactionValues)
+                {
+                    if (transactionRow.Count > 0 && transactionRow[0]?.ToString() == userSRCode)
+                    {
+                        count++;
+                    }
+                }
+                return count;
+            }
+            return 0;
+        }
         private async void ReloadData()
         {
             try
@@ -143,8 +142,6 @@ namespace AdminPage.User_Controls
                 MessageBox.Show("Error while reloading data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        // Call ReloadData() whenever you need to reload the page data
 
         private void reload_Click(object sender, EventArgs e)
         {

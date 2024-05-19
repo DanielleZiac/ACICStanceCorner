@@ -38,7 +38,7 @@
             // 
             this.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(234)))), ((int)(((byte)(239)))));
             this.DownloadBtn.Image = global::AdminPage.Properties.Resources.downloadbtn;
-            this.DownloadBtn.Location = new System.Drawing.Point(636, 283);
+            this.DownloadBtn.Location = new System.Drawing.Point(709, 355);
             this.DownloadBtn.Name = "DownloadBtn";
             this.DownloadBtn.Size = new System.Drawing.Size(364, 111);
             this.DownloadBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -52,7 +52,7 @@
             this.aboutBG.Image = global::AdminPage.Properties.Resources.AboutBG;
             this.aboutBG.Location = new System.Drawing.Point(0, 0);
             this.aboutBG.Name = "aboutBG";
-            this.aboutBG.Size = new System.Drawing.Size(1060, 581);
+            this.aboutBG.Size = new System.Drawing.Size(1167, 717);
             this.aboutBG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.aboutBG.TabIndex = 3;
             this.aboutBG.TabStop = false;
@@ -64,7 +64,7 @@
             this.Controls.Add(this.DownloadBtn);
             this.Controls.Add(this.aboutBG);
             this.Name = "UC_About";
-            this.Size = new System.Drawing.Size(1060, 581);
+            this.Size = new System.Drawing.Size(1167, 717);
             ((System.ComponentModel.ISupportInitialize)(this.DownloadBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aboutBG)).EndInit();
             this.ResumeLayout(false);

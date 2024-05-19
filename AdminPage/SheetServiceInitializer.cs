@@ -1,79 +1,41 @@
-﻿using Google.Apis.Sheets.v4;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using System;
-using Google.Apis.Auth.OAuth2;
+﻿using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
+using Google.Apis.Sheets.v4;
+using System;
 using System.IO;
 
-internal class SheetServiceInitializer
+namespace AdminPage
 {
-    private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
-    private static readonly string ApplicationName = "ACICSTANCE CORNER";
-    private SheetsService _sheetsService;
-    private readonly string _spreadsheetId;
-
-
-    public static SheetsService InitializeSheetsServiceFromEnvVar()
+    internal class SheetServiceInitializer
     {
-        string credentialsFilePath = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
+        public static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
+        private static readonly Lazy<SheetsService> lazy =
+            new Lazy<SheetsService>(() => InitializeSheetsServiceFromEnvVar());
 
-        if (string.IsNullOrEmpty(credentialsFilePath))
-        {
-            throw new Exception("GOOGLE_APPLICATION_CREDENTIALS environment variable is not set.");
-        }
+        public static SheetsService Instance => lazy.Value;
 
-        GoogleCredential credential;
+        private static SheetsService InitializeSheetsServiceFromEnvVar()
+        {
+            string credentialsFilePath = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
 
-        using (var stream = new FileStream(credentialsFilePath, FileMode.Open, FileAccess.Read))
-        {
-            credential = GoogleCredential.FromStream(stream)
-                .CreateScoped(Scopes);
-        }
+            if (string.IsNullOrEmpty(credentialsFilePath))
+            {
+                throw new Exception("GOOGLE_APPLICATION_CREDENTIALS environment variable is not set.");
+            }
 
-        return new SheetsService(new BaseClientService.Initializer()
-        {
-            HttpClientInitializer = credential,
-            ApplicationName = ApplicationName,
-        });
-    }
-    public async Task<IList<IList<object>>> FetchValuesFromSheetAsync(string range)
-    {
-        if (_sheetsService == null)
-        {
-            throw new InvalidOperationException("SheetsService is not initialized.");
-        }
+            GoogleCredential credential;
 
-        try
-        {
-            var request = _sheetsService.Spreadsheets.Values.Get(_spreadsheetId, range);
-            var response = await request.ExecuteAsync();
-            return response.Values;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error fetching values from the sheet: {ex.Message}");
-            return null;
-        }
-    }
+            using (var stream = new FileStream(credentialsFilePath, FileMode.Open, FileAccess.Read))
+            {
+                credential = GoogleCredential.FromStream(stream)
+                    .CreateScoped(SheetsService.Scope.Spreadsheets);
+            }
 
-    public IList<IList<object>> FetchValuesFromSheet(string range)
-    {
-        if (_sheetsService == null)
-        {
-            throw new InvalidOperationException("SheetsService is not initialized.");
-        }
-
-        try
-        {
-            var request = _sheetsService.Spreadsheets.Values.Get(_spreadsheetId, range);
-            var response = request.Execute(); // Execute synchronously
-            return response.Values;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error fetching values from the sheet: {ex.Message}");
-            return null;
+            return new SheetsService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = "ACICSTANCE CORNER",
+            });
         }
     }
 }
