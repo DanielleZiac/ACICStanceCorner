@@ -98,7 +98,7 @@ In addition, the dependencies and libraries used in both user and admin applicat
 | <a href = "https://github.com/DanielleZiac">Danielle Ziac Abril</a> | Developer | danielle.abrilx@gmail.com |   |
 | <a href = "https://github.com/LanceAndrei04">Lance Andrei Espina </a>|  Developer  | lanceandrei.espina30@gmail.com |  |
 | <a href = "https://github.com/AeronEvangelista">Aeron Evangelista </a>| Developer | mr.aeronevangelista@gmail.com | Zayed - Discord|
-| <a href = "https://github.com/T>">Mark Wilhelm Trevor Marcos </a>| Developer |  | |
+| <a href = "https://github.com/T>">Mark Wilhelm Trevor Marcos </a>| Developer | markwilhelmtrevormarcos020304@gmail.com | |
 
 <br>
 
