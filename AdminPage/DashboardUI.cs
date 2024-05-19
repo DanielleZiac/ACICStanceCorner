@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace AdminPage
 {
-    public partial class DashboardUI : Form
+    public partial class DashboardUI : GoogleBaseForm
     {
         private string adminName;
         private string srCode;

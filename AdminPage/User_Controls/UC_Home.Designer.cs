@@ -95,7 +95,6 @@
             this.TaskType.Name = "TaskType";
             this.TaskType.Size = new System.Drawing.Size(185, 26);
             this.TaskType.TabIndex = 3;
-            this.TaskType.TextChanged += new System.EventHandler(this.TaskType_TextChanged);
             // 
             // AddTaskBtn
             // 

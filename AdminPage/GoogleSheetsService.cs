@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdminPage
 {
-    internal class GoogleSheetsService
+    public class GoogleSheetsService
     {
         private readonly SheetsService _sheetsService;
 

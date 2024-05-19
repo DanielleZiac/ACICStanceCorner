@@ -2,24 +2,19 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Services;
 using Google.Apis.Sheets.v4;
 
 namespace AdminPage
 {
-    public partial class RegisterPage : Form
+    public partial class RegisterPage : GoogleBaseForm
     {
-        private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly string SheetName = "AdminDetails";
-        private readonly GoogleSheetsService _googleSheetsService;
-        private SheetsService _sheetsService;
+
         public RegisterPage()
         {
             InitializeComponent();
-            _googleSheetsService = new GoogleSheetsService();
-            _sheetsService = _googleSheetsService.GetSheetsService();
         }
+
         private void BackLog_Click(object sender, EventArgs e)
         {
             LogInFrm loginPage = new LogInFrm();
@@ -56,16 +51,15 @@ namespace AdminPage
                         new List<object> { adminName, adminSRCode, hashedPassword }
                     };
 
-                    int rowCount = 100;
-                    string range = $"{SheetName}!A1:C{rowCount}";
+                    string range = $"{SheetName}!A1:C";
 
-                    var request = _sheetsService.Spreadsheets.Values.Append(new Google.Apis.Sheets.v4.Data.ValueRange
+                    var appendRequest = SheetsService.Spreadsheets.Values.Append(new Google.Apis.Sheets.v4.Data.ValueRange
                     {
                         Values = values
-                    }, SpreadsheetId, range);
+                    }, SheetServiceInitializer.SpreadsheetId, range);
 
-                    request.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
-                    var response = await request.ExecuteAsync();
+                    appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
+                    var appendResponse = await appendRequest.ExecuteAsync();
 
                     MessageBox.Show("Registered Successfully");
                     LogInFrm loginPage = new LogInFrm();
@@ -87,8 +81,8 @@ namespace AdminPage
         {
             try
             {
-                var range = $"{SheetName}!B:B"; 
-                var values = await _googleSheetsService.GetValuesAsync(range);
+                var range = $"{SheetName}!B:B";
+                var values = await GoogleSheetsService.GetValuesAsync(range);
 
                 if (values != null)
                 {
@@ -101,7 +95,7 @@ namespace AdminPage
                     }
                 }
 
-                return true; 
+                return true;
             }
             catch (Exception ex)
             {

@@ -1,32 +1,23 @@
 ﻿using System;
 using System.Windows.Forms;
-using Google.Apis.Auth.OAuth2;
-using Google.Apis.Services;
-using Google.Apis.Sheets.v4;
-using Google.Apis.Util.Store;
 using BCrypt;
 using System.Collections.Generic;
-using static AdminPage.User_Controls.UC_Home;
 using AdminPage.Users;
 using System.Threading.Tasks;
+using Google.Apis.Sheets.v4;
 
 namespace AdminPage
 {
-    public partial class LogInFrm : Form
+    public partial class LogInFrm : GoogleBaseForm
     {
-        private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
-        private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly string SheetName = "AdminDetails";
         private AdminPage.Users.Users LoggedInUser { get; set; }
-        private SheetsService _sheetsService;
-        private readonly GoogleSheetsService _googleSheetsService;
 
         public LogInFrm()
         {
-            _sheetsService = SheetServiceInitializer.Instance;
-            _googleSheetsService = new GoogleSheetsService();
             InitializeComponent();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -41,15 +32,9 @@ namespace AdminPage
 
         private void ShowPassLog_CheckedChanged(object sender, EventArgs e)
         {
-            if (ShowPassLog.Checked)
-            {
-                PassLogBox.UseSystemPasswordChar = false;
-            }
-            else
-            {              
-                PassLogBox.UseSystemPasswordChar = true;
-            }
+            PassLogBox.UseSystemPasswordChar = !ShowPassLog.Checked;
         }
+
         private async void LogInBtn_Click(object sender, EventArgs e)
         {
             string enteredSRCode = SRLogBox.Text;
@@ -58,12 +43,13 @@ namespace AdminPage
             if (enteredSRCode.Length != 8)
             {
                 MessageBox.Show("SR code must be 8 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; 
+                return;
             }
+
             try
-            {              
+            {
                 var range = $"{SheetName}!A:C";
-                var values = await _googleSheetsService.GetValuesAsync(range);
+                var values = await GoogleSheetsService.GetValuesAsync(range);
 
                 if (values != null && values.Count > 0)
                 {
@@ -79,7 +65,7 @@ namespace AdminPage
                                 var updateValues = new List<IList<object>> { new List<object> { DateTime.Now.ToString("yyyy-MM-dd HH:mm") } };
                                 var updateRange = $"{SheetName}!D{values.IndexOf(row) + 1}";
                                 var updateRequest = new Google.Apis.Sheets.v4.Data.ValueRange { Values = updateValues };
-                                var updateUpdateRequest = _sheetsService.Spreadsheets.Values.Update(updateRequest, SpreadsheetId, updateRange);
+                                var updateUpdateRequest = SheetsService.Spreadsheets.Values.Update(updateRequest, SheetServiceInitializer.SpreadsheetId, updateRange);
                                 updateUpdateRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.UpdateRequest.ValueInputOptionEnum.RAW;
                                 var updateUpdateResponse = updateUpdateRequest.Execute();
 
@@ -114,6 +100,5 @@ namespace AdminPage
                 MessageBox.Show("An error occurred while logging in: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

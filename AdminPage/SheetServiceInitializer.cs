@@ -6,7 +6,7 @@ using System.IO;
 
 namespace AdminPage
 {
-    internal class SheetServiceInitializer
+    public class SheetServiceInitializer
     {
         public static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
         private static readonly Lazy<SheetsService> lazy =

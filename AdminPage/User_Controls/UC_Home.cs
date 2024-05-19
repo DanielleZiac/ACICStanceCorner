@@ -91,11 +91,6 @@ namespace AdminPage.User_Controls
             }
         }
 
-        private void TaskType_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private async Task LoadTasksForCurrentUserAsync()
         {
             try
