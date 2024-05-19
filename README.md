@@ -1,3 +1,6 @@
+<p align = "center">
+  <img src = "ac_logo.png" width = "300" height = "300" alt="LogoInsert"> 
+</p>
 # ACICStanceCorner
 
 ## Table of Contents
