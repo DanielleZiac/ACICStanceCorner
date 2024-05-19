@@ -8,9 +8,14 @@
 <br>
 
 ## Table of Contents
-- [Credits](#credits)
+### [1. Project Overview](#proj-obv)
+### [2. Objectives](#obj)
+### [3. Functional Requirements](#req)
+### [3. Database Management System](#db)
+### [4. Technology Stacks](#tech-stacks) 
+### [5. Contributors](#contrib) 
 
-## <a id = "proj-obv"> 🎯Project Overview </a> <br>
+## <a id = "proj-obv"> 🎯 Project Overview </a> <br>
 The ACICStance Corner App is your one-stop shop for everything related to the College of Informatics and Computing Sciences (CICS) student experience. This innovative platform streamlines the way you access essential academic resources and connect with valuable student council services.
  <br>
 ```
@@ -30,7 +35,7 @@ The project is aligned with the 17 Sustainable Development Goals (SDG), specific
 > 9th Industry, Innovation and Infrastracture <br>
 <br>
 
-#### <span style="color: black;" id="app"> 1. Functional Requirements </span>
+## <span style="color: black;" id="req"> 💻 Functional Requirements </span>
 <br>
 
             1.1 User Application
@@ -53,7 +58,7 @@ The admin shall be able to: <br><br>
 
 <br>
 
-#### <span style="color: black;" id="db"> Database Management System </span>
+## <span style="color: black;" id="db"> 📥 Database Management System </span>
 <br>
 
             1.1 Choice of Database System
