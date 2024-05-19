@@ -1,0 +1,184 @@
+C:\Users\Aeron\source\repos\aCICSistanceCorner\bin\Debug\net6.0-windows\aCICSistanceCorner.exe
+C:\Users\Aeron\source\repos\aCICSistanceCorner\bin\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.AssemblyReference.cache
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.BorrowItems.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.HomePage.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.StartingPage.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.marketplace.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.printed.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.PrintingSerivces.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.Profile.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.Properties.Resources.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.Register.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.toreceive.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.borrow_tr.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.transactionstab.resources
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.GenerateResource.cache
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfoInputs.cache
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfo.cs
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.CoreCompileInputs.cache
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\refint\aCICSistanceCorner.dll
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\Aeron\source\repos\aCICSistanceCorner\bin\Debug\net6.0-windows\aCICSistanceCorner.deps.json
+C:\Users\Aeron\source\repos\aCICSistanceCorner\bin\Debug\net6.0-windows\aCICSistanceCorner.runtimeconfig.json
+C:\Users\Aeron\source\repos\aCICSistanceCorner\bin\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\aCICSistanceCorner.genruntimeconfig.cache
+C:\Users\Aeron\source\repos\aCICSistanceCorner\obj\Debug\net6.0-windows\ref\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.exe
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.deps.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.runtimeconfig.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\BCrypt.Net-Next.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Auth.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Core.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Drive.v3.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Sheets.v4.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Spire.Pdf.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.CodeDom.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.BorrowItems.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.StartingPage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.marketplace.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.PrintingSerivces.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Profile.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Properties.Resources.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Register.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.toreceive.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.borrow_tr.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.transactionstab.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.GenerateResource.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfo.cs
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSist.00B3438A.Up2Date
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\refint\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.genruntimeconfig.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\ref\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.HomePage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.exe
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.deps.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.runtimeconfig.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\BCrypt.Net-Next.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Auth.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Core.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Drive.v3.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Sheets.v4.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Spire.Pdf.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.CodeDom.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.BorrowItems.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.HomePage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.StartingPage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.marketplace.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.PrintingSerivces.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Profile.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Properties.Resources.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Register.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.toreceive.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.borrow_tr.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.transactionstab.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.GenerateResource.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfo.cs
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSist.00B3438A.Up2Date
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\refint\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.genruntimeconfig.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\ACICStance Corner 1\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\ref\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.exe
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.deps.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.runtimeconfig.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\BCrypt.Net-Next.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Auth.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Core.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Drive.v3.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Sheets.v4.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Spire.Pdf.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.CodeDom.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.BorrowItems.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.HomePage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.StartingPage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.marketplace.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.PrintingSerivces.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Profile.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Properties.Resources.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Register.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.toreceive.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.borrow_tr.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.transactionstab.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.GenerateResource.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfo.cs
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSist.00B3438A.Up2Date
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\refint\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.genruntimeconfig.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\ref\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.exe
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.deps.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.runtimeconfig.json
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\BCrypt.Net-Next.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Auth.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Core.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Drive.v3.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Google.Apis.Sheets.v4.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\Spire.Pdf.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.CodeDom.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.BorrowItems.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.HomePage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.StartingPage.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.marketplace.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.PrintingSerivces.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Profile.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Properties.Resources.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.Register.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.toreceive.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.borrow_tr.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.transactionstab.resources
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.GenerateResource.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.AssemblyInfo.cs
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSist.00B3438A.Up2Date
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\refint\aCICSistanceCorner.dll
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.pdb
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\aCICSistanceCorner.genruntimeconfig.cache
+C:\Users\USER\Documents\School\2nd Year - 2nd Semester (2023-2024)\CS 222 - Advanced Object-Oriented Programming\All Versions of ACICStance Corner\final\aCICSistanceCornerUpdated\obj\Debug\net6.0-windows\ref\aCICSistanceCorner.dll
