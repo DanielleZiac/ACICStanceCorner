@@ -115,187 +115,75 @@ namespace aCICSistanceCorner
             productname.Font = new Font("Arial", 12, FontStyle.Bold);
             availablestocks.Font = new Font("Arial", 10, FontStyle.Regular);
         }
+        private void AnimateAndSetDetails(Button button, Bitmap initialImage, Bitmap finalImage, string productName)
+        {
+            button.Image = initialImage;
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 100;
+            timer.Tick += (s, args) =>
+            {
+                button.Image = finalImage;
+                timer.Stop();
+                timer.Dispose();
+            };
+            timer.Start();
+            tabShow.Visible = true;
+            SetProductDetails(productName, finalImage);
+        }
+
         private void itembasketball_Click(object sender, EventArgs e)
         {
-            itembasketball.Image = Properties.Resources.itembasketball_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                itembasketball.Image = Properties.Resources.itembasketball;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Basketball", Properties.Resources.itembasketball);
+            AnimateAndSetDetails(itembasketball, Properties.Resources.itembasketball_, Properties.Resources.itembasketball, "Basketball");
         }
+
         private void speaker_Click(object sender, EventArgs e)
         {
-            speaker.Image = Properties.Resources.speaker_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                speaker.Image = Properties.Resources.speaker;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Speaker", Properties.Resources.speaker);
+            AnimateAndSetDetails(speaker, Properties.Resources.speaker_, Properties.Resources.speaker, "Speaker");
         }
         private void volleyball_Click(object sender, EventArgs e)
         {
-            volleyball.Image = Properties.Resources.volleyball_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                volleyball.Image = Properties.Resources.volleyball;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Volleyball", Properties.Resources.volleyball);
+            AnimateAndSetDetails(volleyball, Properties.Resources.volleyball_, Properties.Resources.volleyball, "Volleyball");
         }
         private void scissors_Click(object sender, EventArgs e)
         {
-            scissors.Image = Properties.Resources.scissors_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                scissors.Image = Properties.Resources.scissors;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Scissors", Properties.Resources.scissors);
+            AnimateAndSetDetails(scissors, Properties.Resources.scissors_, Properties.Resources.scissors, "Scissors");
         }
         private void gluegun_Click(object sender, EventArgs e)
         {
-            gluegun.Image = Properties.Resources.gluegun_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                gluegun.Image = Properties.Resources.gluegun;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Glue Gun", Properties.Resources.gluegun);
+            AnimateAndSetDetails(gluegun, Properties.Resources.gluegun_, Properties.Resources.gluegun, "Glue Gun");
         }
         private void chess_Click(object sender, EventArgs e)
         {
-            chess.Image = Properties.Resources.chess_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                chess.Image = Properties.Resources.chess;
-
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Chess", Properties.Resources.chess);
+            AnimateAndSetDetails(chess, Properties.Resources.chess_, Properties.Resources.chess, "Chess");
         }
         private void racket_Click(object sender, EventArgs e)
         {
-            racket.Image = Properties.Resources.racket_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                racket.Image = Properties.Resources.racket;
-
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Racket", Properties.Resources.racket);
+            AnimateAndSetDetails(racket, Properties.Resources.racket_, Properties.Resources.racket, "Racket");
         }
+
         private void shuttlecock_Click(object sender, EventArgs e)
         {
-            shuttlecock.Image = Properties.Resources.shuttlecock_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                shuttlecock.Image = Properties.Resources.shuttlecock;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Shuttlecock", Properties.Resources.shuttlecock);
+            AnimateAndSetDetails(shuttlecock, Properties.Resources.shuttlecock_, Properties.Resources.shuttlecock, "Shuttlecock");
         }
+
         private void paddle_Click(object sender, EventArgs e)
         {
-            paddle.Image = Properties.Resources.paddle_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                paddle.Image = Properties.Resources.paddle;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Paddle", Properties.Resources.paddle);
+            AnimateAndSetDetails(paddle, Properties.Resources.paddle_, Properties.Resources.paddle, "Paddle");
         }
+
         private void pball_Click(object sender, EventArgs e)
         {
-            pball.Image = Properties.Resources.pball_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                pball.Image = Properties.Resources.pball;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Ping-pong Ball", Properties.Resources.pball);
+            AnimateAndSetDetails(pball, Properties.Resources.pball_, Properties.Resources.pball, "Ping-pong Ball");
         }
+
         private void piano_Click(object sender, EventArgs e)
         {
-            piano.Image = Properties.Resources.piano_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                piano.Image = Properties.Resources.piano;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Piano", Properties.Resources.piano);
+            AnimateAndSetDetails(piano, Properties.Resources.piano_, Properties.Resources.piano, "Piano");
         }
+
         private void guitar_Click(object sender, EventArgs e)
         {
-            guitar.Image = Properties.Resources.guitar_;
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                guitar.Image = Properties.Resources.guitar;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-            tabShow.Visible = true;
-            SetProductDetails("Guitar", Properties.Resources.guitar);
+            AnimateAndSetDetails(guitar, Properties.Resources.guitar_, Properties.Resources.guitar, "Guitar");
         }
         private int GetAvailableStocks(string productName)
         {

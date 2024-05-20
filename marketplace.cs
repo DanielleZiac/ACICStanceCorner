@@ -115,211 +115,79 @@ namespace aCICSistanceCorner
             productname.Font = new Font("Arial", 12, FontStyle.Bold);
             availablestocks.Font = new Font("Arial", 10, FontStyle.Regular);
         }
+        private void AnimateAndSetDetails(Button button, Bitmap initialImage, Bitmap finalImage, string productName)
+        {
+            button.Image = initialImage;
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 100;
+            timer.Tick += (s, args) =>
+            {
+                button.Image = finalImage;
+                timer.Stop();
+                timer.Dispose();
+            };
+            timer.Start();
+            tabShow.Visible = true;
+            SetProductDetails(productName, finalImage);
+        }
         private void pen_Click(object sender, EventArgs e)
         {
-            pen.Image = Properties.Resources.pen_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                pen.Image = Properties.Resources.pen;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Ballpen", Properties.Resources.pen);
+            AnimateAndSetDetails(pen, Properties.Resources.pen_, Properties.Resources.pen, "Ballpen");
         }
+
         private void eraser_Click(object sender, EventArgs e)
         {
-            eraser.Image = Properties.Resources.eraser_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                eraser.Image = Properties.Resources.eraser;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Eraser", Properties.Resources.eraser);
+            AnimateAndSetDetails(eraser, Properties.Resources.eraser_, Properties.Resources.eraser, "Eraser");
         }
+
         private void notebook_Click(object sender, EventArgs e)
         {
-            notebook.Image = Properties.Resources.notebook_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                notebook.Image = Properties.Resources.notebook;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Notebook", Properties.Resources.notebook);
+            AnimateAndSetDetails(notebook, Properties.Resources.notebook_, Properties.Resources.notebook, "Notebook");
         }
+
         private void sbond_Click(object sender, EventArgs e)
         {
-            sbond.Image = Properties.Resources.sbond_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                sbond.Image = Properties.Resources.sbond;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Short Bond", Properties.Resources.sbond);
+            AnimateAndSetDetails(sbond, Properties.Resources.sbond_, Properties.Resources.sbond, "Short Bond");
         }
+
         private void lbond_Click(object sender, EventArgs e)
         {
-            lbond.Image = Properties.Resources.lbond_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                lbond.Image = Properties.Resources.lbond;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Long Bond", Properties.Resources.lbond);
+            AnimateAndSetDetails(lbond, Properties.Resources.lbond_, Properties.Resources.lbond, "Long Bond");
         }
+
         private void ypad_Click(object sender, EventArgs e)
         {
-            ypad.Image = Properties.Resources.ypad_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                ypad.Image = Properties.Resources.ypad;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Yellow Pad", Properties.Resources.ypad);
+            AnimateAndSetDetails(ypad, Properties.Resources.ypad_, Properties.Resources.ypad, "Yellow Pad");
         }
+
         private void halfIndex_Click(object sender, EventArgs e)
         {
-            halfIndex.Image = Properties.Resources.halfIndex_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                halfIndex.Image = Properties.Resources.halfIndex;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("1/2 Index", Properties.Resources.sbond);
+            AnimateAndSetDetails(halfIndex, Properties.Resources.halfIndex_, Properties.Resources.halfIndex, "1/2 Index");
         }
+
         private void quarterIndex_Click(object sender, EventArgs e)
         {
-            quarterIndex.Image = Properties.Resources.quarterIndex_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                quarterIndex.Image = Properties.Resources.quarterIndex;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("1/4 Index", Properties.Resources.quarterIndex);
+            AnimateAndSetDetails(quarterIndex, Properties.Resources.quarterIndex_, Properties.Resources.quarterIndex, "1/4 Index");
         }
+
         private void cTape_Click(object sender, EventArgs e)
         {
-            cTape.Image = Properties.Resources.cTape_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                cTape.Image = Properties.Resources.cTape;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Correction Tape", Properties.Resources.cTape);
+            AnimateAndSetDetails(cTape, Properties.Resources.cTape_, Properties.Resources.cTape, "Correction Tape");
         }
+
         private void pencilItem_Click(object sender, EventArgs e)
         {
-            pencilItem.Image = Properties.Resources.pencilItem_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                pencilItem.Image = Properties.Resources.pencilItem;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Pencil", Properties.Resources.pencilItem);
+            AnimateAndSetDetails(pencilItem, Properties.Resources.pencilItem_, Properties.Resources.pencilItem, "Pencil");
         }
+
         private void sharpener_Click(object sender, EventArgs e)
         {
-            sharpener.Image = Properties.Resources.sharpener_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                sharpener.Image = Properties.Resources.sharpener;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Sharpener", Properties.Resources.sharpener);
-
+            AnimateAndSetDetails(sharpener, Properties.Resources.sharpener_, Properties.Resources.sharpener, "Sharpener");
         }
+
         private void paste_Click(object sender, EventArgs e)
         {
-            paste.Image = Properties.Resources.paste_;
-
-            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 100;
-            timer.Tick += (s, args) =>
-            {
-                paste.Image = Properties.Resources.paste;
-                timer.Stop();
-                timer.Dispose();
-            };
-            timer.Start();
-
-            tabShow.Visible = true;
-            SetProductDetails("Paste", Properties.Resources.paste);
-
+            AnimateAndSetDetails(paste, Properties.Resources.paste_, Properties.Resources.paste, "Paste");
         }
         private int GetAvailableStocks(string productName)
         {
