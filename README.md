@@ -16,7 +16,10 @@
 ## <a id = "proj-obv"> 🎯 Project Overview </a> <br>
 The ACICStance Corner App is your one-stop shop for everything related to the College of Informatics and Computing Sciences (CICS) student experience. This innovative platform streamlines the way you access essential academic resources and connect with valuable student council services.
  <br>
->The admin application is available at the AdminPage branch of the repository.
+## <a id = admin> 👨‍💼 Admin Branch </a><br>
+-  [adminPage](https://github.com/DanielleZiac/ACICStanceCorner/tree/adminPage)
+  >The admin application is available at the AdminPage branch of the repository.
+
 ##  <a id = "obj"> 📈 Objective </a><br>
 
 
