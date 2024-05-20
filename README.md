@@ -8,19 +8,16 @@
 <br>
 
 ## Table of Contents
-### [1. Project Overview](#proj-obv)
-### [2. Objectives](#obj)
-### [3. Functional Requirements](#req)
-### [3. Database Management System](#db)
-### [4. Technology Stacks](#tech-stacks) 
-### [5. Contributors](#contrib) 
+-  [1. Project Overview](#proj-obv)
+-  [2. Objectives](#obj)
+-  [3. Database Management System](#db)
+-  [4. Technology Stacks](#tech-stacks) 
+-  [5. Contributors](#contrib) 
 
 ## <a id = "proj-obv"> 🎯 Project Overview </a> <br>
 The ACICStance Corner App is your one-stop shop for everything related to the College of Informatics and Computing Sciences (CICS) student experience. This innovative platform streamlines the way you access essential academic resources and connect with valuable student council services.
  <br>
-```
-      The admin application is available at the AdminPage branch of the repository.
-```
+<b>The admin application is available at the AdminPage branch of the repository.</b>
 ##  <a id = "obj"> 📈 Objective </a><br>
 
 
@@ -35,33 +32,12 @@ The project is aligned with the 17 Sustainable Development Goals (SDG), specific
 > 9th Industry, Innovation and Infrastracture <br>
 <br>
 
-## <span style="color: black;" id="req"> 💻 Functional Requirements </span>
-<br>
-
-            1.1 User Application
-<br>
-The user shall be able to: <br><br>
-
-- log-in user their existing SR-code and
-passwords.<br><br>
-- view a catalog of available school supplies and sports
-equipment, checking real-time availability.<br><br>
-<br>
-
-            1.2 Admin Application
-<br>
-The admin shall be able to: <br><br>
-
-- create accounts, ensuring only authorized users can access information. <br><br>
-- view the dashboards, transaction history, and tasks within the system, allowing auditing purposes and identifying any potential issues.<br><br>
-- view and manage service requests, approve or deny them based on availability and relevant policies.<br>
-
 <br>
 
 ## <span style="color: black;" id="db"> 📥 Database Management System </span>
 <br>
 
-            1.1 Choice of Database System
+<b>Choice of Database System </b>
 <br>
 
 The project utilizes Google Sheets API as its database management system. The decision to use Google Sheets API over MySQL was based on several factors, including:
