@@ -3,7 +3,6 @@
 </p>
 
 # ACICStanceCorner
-
 <br> A user-friendly application for CICS Student Services, facilitating transaction management, inventory tracking, request approval, and student information access.
 <br>
 
