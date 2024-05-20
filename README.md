@@ -79,6 +79,6 @@ In addition, the dependencies and libraries used in both user and admin applicat
 <br>
 
 - Course:
-  - CS 221 (Advanced Object-oriented Programming)
+  - CS 222 (Advanced Object-oriented Programming)
 - Course Facilitator:
   - Fatima Marie Agdon
