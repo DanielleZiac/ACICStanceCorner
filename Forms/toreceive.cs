@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Google.Apis.Sheets.v4.Data;
+using Google.Apis.Sheets.v4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,24 +11,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Services;
-using Google.Apis.Sheets.v4;
-using Google.Apis.Sheets.v4.Data;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Windows.Forms;
-using AdminPage;
+using aCICSistanceCorner.Forms.GoogleAPi;
 
 namespace aCICSistanceCorner
 {
-    public partial class transactionstab : Form
+    public partial class toreceive : Form
     {
-        private static readonly string[] Scopes = { SheetsService.Scope.SpreadsheetsReadonly };
+        private static readonly string[] Scopes = { SheetsService.Scope.Spreadsheets };
         private static readonly string ApplicationName = "ACICStance Corner";
         private static readonly string SpreadsheetId = "1nFKEsGzUbNaWF4VJ4A1AnDinWDNkyEFlv6UTuwFNU_Y";
-        private static readonly string SheetName = "TransactionSheet";
+        private static readonly string SheetName = "ApprovalSheet";
         private SheetsService _sheetsService;
         private const string LoggedInUserFilePath = "loggedInUser.txt";
+        private const int ServiceIDToDisplay = 1;
         private void DisplayRequests(int textSize)
         {
             string loggedInUser = File.ReadAllText(LoggedInUserFilePath);
@@ -40,43 +37,33 @@ namespace aCICSistanceCorner
                 panel.BackColor = System.Drawing.Color.FromArgb(100, System.Drawing.Color.White);
                 foreach (var request in requests)
                 {
-                    if (request.Count >= 6)
+                    int serviceId = Convert.ToInt32(request[1]);
+                    string approvalStatus = Convert.ToString(request[5]);
+                    if (serviceId == ServiceIDToDisplay &&
+                        (approvalStatus.Equals("Pending", StringComparison.OrdinalIgnoreCase) ||
+                        approvalStatus.Equals("Approved", StringComparison.OrdinalIgnoreCase) ||
+                        approvalStatus.Equals("Rejected", StringComparison.OrdinalIgnoreCase)))
                     {
                         Label label = new Label();
                         label.Size = new Size(329, 105);
                         label.TextAlign = ContentAlignment.MiddleLeft;
-                        StringBuilder labelText = new StringBuilder();
-                        labelText.AppendLine($"                                     SR-Code:                {request[0]}");
-                        labelText.AppendLine($"                                     Service Type:           {GetServiceType(request[1])}");
-                        labelText.AppendLine($"                                     Item/Service:           {request[2]}");
-                        labelText.AppendLine($"                                     Quantity:                {request[3]}");
-                        labelText.AppendLine($"                                     Date Approved:       {request[5]}");
-                        label.Text = labelText.ToString();
+                        label.Text = $"                                     Item: {request[2]}\n" +
+                                     $"                                     Number of Requested Item/s: {request[3]}\n\n\n" +
+                                     $"                                     Status: {request[5]}";
                         label.Font = new Font(label.Font.FontFamily, textSize);
-                        Image image;
-                        if (int.TryParse(request[1].ToString(), out int service))
+                        if (approvalStatus.Equals("Pending", StringComparison.OrdinalIgnoreCase))
                         {
-                            switch (service)
-                            {
-                                case 1: // Supply service
-                                    image = Properties.Resources.supplyApproved;
-                                    break;
-                                case 2: // Borrow service
-                                    image = Properties.Resources.borrowApproved;
-                                    break;
-                                case 3: // PDF service
-                                    image = Properties.Resources.pdfApproved;
-                                    break;
-                                default: // Default image if service is not recognized
-                                    image = null;
-                                    break;
-                            }
-                            if (image != null)
-                            {
-                                label.Image = image;
-                                label.ImageAlign = ContentAlignment.MiddleLeft;
-                            }
+                            label.Image = Properties.Resources.supplyPending;
                         }
+                        else if (approvalStatus.Equals("Approved", StringComparison.OrdinalIgnoreCase))
+                        {
+                            label.Image = Properties.Resources.supplyApproved;
+                        }
+                        else
+                        {
+                            label.Image = Properties.Resources.supplyRejected;
+                        }
+                        label.ImageAlign = ContentAlignment.MiddleLeft;
                         panel.Controls.Add(label);
                         label.Location = new Point(0, (panel.Controls.Count - 1) * (label.Height + 10));
                     }
@@ -103,7 +90,7 @@ namespace aCICSistanceCorner
             {
                 foreach (var row in approvalSheetValues)
                 {
-                    if (row.Count >= 5 && row[0].ToString() == loggedInUser)
+                    if (row.Count >= 6 && row[0].ToString() == loggedInUser)
                     {
                         string itemId = row[2].ToString();
                         string item = FindItemById(itemId, itemSheetValues);
@@ -112,6 +99,7 @@ namespace aCICSistanceCorner
                     }
                 }
             }
+
             return userRequests;
         }
         private string FindItemById(string itemId, IList<IList<object>> itemSheetValues)
@@ -126,39 +114,15 @@ namespace aCICSistanceCorner
 
             return string.Empty;
         }
-
-        private string GetServiceType(object serviceId)
-        {
-            string serviceType = string.Empty;
-            if (int.TryParse(serviceId.ToString(), out int id))
-            {
-                string range = $"ServiceSheet!A:B";
-                SpreadsheetsResource.ValuesResource.GetRequest request = _sheetsService.Spreadsheets.Values.Get(SpreadsheetId, range);
-                ValueRange response = request.Execute();
-                IList<IList<object>> values = response.Values;
-                if (values != null)
-                {
-                    foreach (var row in values)
-                    {
-                        if (row.Count >= 2 && row[0].ToString() == serviceId.ToString())
-                        {
-                            serviceType = row[1].ToString();
-                            break;
-                        }
-                    }
-                }
-            }
-            return serviceType;
-        }
-        public transactionstab()
+        public toreceive()
         {
             InitializeComponent();
-            InitializeButtons();
             _sheetsService = SheetServiceInitializer.Instance;
             this.Width = 408;
             this.Height = 891;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.BackgroundImage = aCICSistanceCorner.Properties.Resources.TransactionsTab;
+            this.BackgroundImage = aCICSistanceCorner.Properties.Resources.SCHOOL_SUPPLIES_MAIN_2;
+            InitializeButtons();
             DisplayRequests(6);
         }
         private void InitializeButtons()
@@ -183,6 +147,7 @@ namespace aCICSistanceCorner
             button.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(button);
             button.BringToFront();
+
         }
         private void logo_Click(object sender, EventArgs e)
         {
@@ -214,12 +179,6 @@ namespace aCICSistanceCorner
             Profile profile = new Profile();
             profile.Show();
         }
-        private void signOut_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            StartingPage start = new StartingPage();
-            start.Show();
-        }
         private void tabLogo_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -229,8 +188,21 @@ namespace aCICSistanceCorner
         private void back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Profile profile = new Profile();
-            profile.Show();
+            marketplace marketPlace = new marketplace();
+            marketPlace.Show();
+        }
+        private void getnow_tr_Click(object sender, EventArgs e)
+        {
+            getnow_tr.Image = Properties.Resources.getnow_r_;
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 100;
+            timer.Tick += (s, args) =>
+            {
+                getnow_tr.Image = Properties.Resources.getnow_r;
+                timer.Stop();
+                timer.Dispose();
+            };
+            timer.Start();
         }
     }
 }

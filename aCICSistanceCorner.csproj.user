@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="BorrowItems.cs">
+    <Compile Update="Forms\BorrowItems.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Register.cs">
+    <Compile Update="Forms\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="toreceive.cs">
+    <Compile Update="Forms\toreceive.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="torequest.cs">
+    <Compile Update="Forms\torequest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="marketplace.cs">
+    <Compile Update="Forms\marketplace.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="main.cs">
+    <Compile Update="Forms\main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="homepage.cs">
+    <Compile Update="Forms\homepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PrintingSerivces.cs">
+    <Compile Update="Forms\PrintingSerivces.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="profile.cs">
+    <Compile Update="Forms\profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="transactionstab.cs">
+    <Compile Update="Forms\transactionstab.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

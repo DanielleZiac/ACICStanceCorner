@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Documents\\School\\2nd Year - 2nd Semester (2023-2024)\\CS 222 - Advanced Object-Oriented Programming\\All Versions of ACICStance Corner\\final\\aCICSistanceCornerUpdated\\aCICSistanceCorner.csproj": {}
+    "C:\\Users\\Lance\\Downloads\\ACICStanceCorner\\ACICStanceCorner\\aCICSistanceCorner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Documents\\School\\2nd Year - 2nd Semester (2023-2024)\\CS 222 - Advanced Object-Oriented Programming\\All Versions of ACICStance Corner\\final\\aCICSistanceCornerUpdated\\aCICSistanceCorner.csproj": {
+    "C:\\Users\\Lance\\Downloads\\ACICStanceCorner\\ACICStanceCorner\\aCICSistanceCorner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\School\\2nd Year - 2nd Semester (2023-2024)\\CS 222 - Advanced Object-Oriented Programming\\All Versions of ACICStance Corner\\final\\aCICSistanceCornerUpdated\\aCICSistanceCorner.csproj",
+        "projectUniqueName": "C:\\Users\\Lance\\Downloads\\ACICStanceCorner\\ACICStanceCorner\\aCICSistanceCorner.csproj",
         "projectName": "aCICSistanceCorner",
-        "projectPath": "C:\\Users\\USER\\Documents\\School\\2nd Year - 2nd Semester (2023-2024)\\CS 222 - Advanced Object-Oriented Programming\\All Versions of ACICStance Corner\\final\\aCICSistanceCornerUpdated\\aCICSistanceCorner.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\School\\2nd Year - 2nd Semester (2023-2024)\\CS 222 - Advanced Object-Oriented Programming\\All Versions of ACICStance Corner\\final\\aCICSistanceCornerUpdated\\obj\\",
+        "projectPath": "C:\\Users\\Lance\\Downloads\\ACICStanceCorner\\ACICStanceCorner\\aCICSistanceCorner.csproj",
+        "packagesPath": "C:\\Users\\Lance\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lance\\Downloads\\ACICStanceCorner\\ACICStanceCorner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lance\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -78,24 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.28, 6.0.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -104,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

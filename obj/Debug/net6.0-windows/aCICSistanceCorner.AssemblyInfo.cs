@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("aCICSistanceCorner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d23d9c0278144da21342b8fe08be2a1cf5ec93db")]
 [assembly: System.Reflection.AssemblyProductAttribute("aCICSistanceCorner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("aCICSistanceCorner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
